@@ -1,0 +1,70 @@
+/* Estilo para la página de filtro por género */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .cards-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 2rem 0;
+  }
+  
+  /* Tablets grandes (≤1024px) */
+  @media (max-width: 1024px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.9rem;
+      padding: 0.9rem;
+    }
+  
+    .cards-container p {
+      font-size: 1.1rem;
+      margin: 1.8rem 0;
+    }
+  }
+  
+  /* Tablets pequeñas/Móviles grandes (≤768px) */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+  
+    .cards-container p {
+      font-size: 1rem;
+      margin: 1.5rem 0;
+    }
+  }
+  
+  /* Móviles (≤480px) */
+  @media (max-width: 480px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    .cards-container p {
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+  }
+  
+
+  @media (max-width: 280px) {
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.4rem;
+      padding: 0.4rem;
+    }
+  
+    .cards-container p {
+      font-size: 0.8rem;
+      margin: 0.8rem 0;
+    }
+  }

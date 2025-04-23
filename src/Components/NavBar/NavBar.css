@@ -1,0 +1,48 @@
+nav {
+    ul {
+        display: flex;
+        background-color: rgb(175, 25, 25);
+        padding: 10px;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .item {
+        text-decoration: none;
+        margin: 0 20px;
+        color: white;
+    }
+}
+
+/* Media query para tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    nav {
+        ul {
+            flex-direction: column; /* Apila los elementos verticalmente */
+            font-size: 1.5rem; /* Reduce el tamaño de fuente */
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item {
+            margin: 10px 0; /* Ajusta márgenes para elementos apilados */
+        }
+    }
+}
+
+/* Media query para móviles (max-width: 480px) */
+@media (max-width: 480px) {
+    nav {
+        ul {
+            flex-direction: column;
+            font-size: 1.2rem; /* Tamaño de fuente aún más pequeño */
+            padding: 10px;
+        }
+
+        .item {
+            margin: 8px 0;
+        }
+    }
+}
